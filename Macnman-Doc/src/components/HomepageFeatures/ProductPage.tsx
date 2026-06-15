@@ -1,5 +1,5 @@
 import Link from "@docusaurus/Link";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ROUTES } from "../../lib/routes";
 import {
   FiShoppingBag,
@@ -694,7 +694,7 @@ export default function ProductPage() {
   return (
     <section className="product-page-container bg-white min-h-screen">
       {/* Hero Header Area */}
-      <div className="pt-[40px] flex flex-col items-center">
+      <div className="pt-[50px] flex flex-col items-center">
         {/* Main Title */}
         <h1
           className="text-center font-semibold text-[#1E1E1E] px-4"
@@ -709,12 +709,12 @@ export default function ProductPage() {
         </h1>
 
         {/* 3. Bottom Support & Ecosystem Pills */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-4 mb-6 max-w-6xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-6 max-w-6xl mx-auto px-4">
           {/* Pill 1: Call Expert */}
           <a
             href="tel:+917972856163"
             aria-label="Call our IoT expert at +91 79728 56163 for assistance selecting products"
-            className="group support-pill relative overflow-hidden bg-white flex items-center gap-4 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] px-5 rounded-full hover:border-[#DA2744] w-full md:w-auto"
+            className="group support-pill relative overflow-hidden bg-white flex items-center gap-4 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] px-5 py-2 rounded-full hover:border-[#DA2744] hover:scale-[1.02] hover:shadow-[0_10px_25px_rgba(218,39,68,0.25)] w-full md:w-auto"
           >
             {/* Curved fill background overlay */}
             <div className="absolute left-1/2 -bottom-10 -translate-x-1/2 w-8 h-8 bg-[#DA2744] rounded-full transition-transform duration-1000 ease-in-out scale-0 group-hover:scale-[18] z-0 pointer-events-none" />
@@ -725,11 +725,11 @@ export default function ProductPage() {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="relative z-10 text-left leading-tight -gap-3 ">
-              <p className="text-xs -mt-11 pt-14 text-gray-500 mb-1 font-medium group-hover:text-white/80 transition-colors duration-1000 ease-in-out">
+            <div className="relative z-10 text-left leading-tight">
+              <p className="text-xs text-gray-500 font-medium group-hover:text-white/80 transition-colors duration-1000 ease-in-out m-0" style={{ margin: 0 }}>
                 Need Help Selecting Product?
               </p>
-              <p className="text-sm mb-3 text-[#DA2744] font-bold group-hover:text-white transition-colors duration-1000 ease-in-out">
+              <p className="text-sm text-[#DA2744] font-bold group-hover:text-white transition-colors duration-1000 ease-in-out m-0" style={{ margin: 0 }}>
                 Call IoT Expert
               </p>
             </div>
@@ -739,18 +739,18 @@ export default function ProductPage() {
           <Link
             href="/"
             aria-label="Explore the complete lineup of Macnman IoT products"
-            className="group support-pill relative overflow-hidden bg-white flex items-center gap-4 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] px-5 -py-1 rounded-full hover:border-[#DA2744] w-full md:w-auto"
+            className="group support-pill relative overflow-hidden bg-white flex items-center gap-4 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] px-6 py-2 rounded-full hover:border-[#DA2744] hover:scale-[1.02] hover:shadow-[0_10px_25px_rgba(218,39,68,0.25)] w-full md:w-auto"
           >
             {/* Curved fill background overlay */}
             <div className="absolute left-1/2 -bottom-10 -translate-x-1/2 w-8 h-8 bg-[#DA2744] rounded-full transition-transform duration-1000 ease-in-out scale-0 group-hover:scale-[18] z-0 pointer-events-none" />
             <div className="relative z-10 w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 group-hover:bg-white/20 group-hover:text-white group-hover:scale-105 transition-all duration-300 flex-shrink-0">
               <FiShoppingBag className="w-5 h-5" />
             </div>
-            <div className="relative z-10 text-left leading-tight -gap-3 ">
-              <p className="text-xs -mt-11 pt-14 text-gray-500 mb-1 font-medium group-hover:text-white/80 transition-colors duration-1000 ease-in-out">
+            <div className="relative z-10 text-left leading-tight">
+              <p className="text-xs text-gray-500 font-medium group-hover:text-white/80 transition-colors duration-1000 ease-in-out m-0" style={{ margin: 0 }}>
                 Discover Complete Lineup
               </p>
-              <p className="text-sm mb-3 text-[#DA2744] font-bold group-hover:text-white transition-colors duration-1000 ease-in-out">
+              <p className="text-sm text-[#DA2744] font-bold group-hover:text-white transition-colors duration-1000 ease-in-out m-0" style={{ margin: 0 }}>
                 Explore Ecosystem
               </p>
             </div>
@@ -760,18 +760,18 @@ export default function ProductPage() {
           <a
             href="tel:+917972856163"
             aria-label="Contact Macnman support at +91 79728 56163"
-            className="group support-pill relative overflow-hidden bg-white flex items-center gap-4 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] px-5 -py-1 rounded-full hover:border-[#DA2744] w-full md:w-auto"
+            className="group support-pill relative overflow-hidden bg-white flex items-center gap-4 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] px-6 py-2 rounded-full hover:border-[#DA2744] hover:scale-[1.02] hover:shadow-[0_10px_25px_rgba(218,39,68,0.25)] w-full md:w-auto"
           >
             {/* Curved fill background overlay */}
             <div className="absolute left-1/2 -bottom-10 -translate-x-1/2 w-8 h-8 bg-[#DA2744] rounded-full transition-transform duration-1000 ease-in-out scale-0 group-hover:scale-[18] z-0 pointer-events-none" />
             <div className="relative z-10 w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 group-hover:bg-white/20 group-hover:text-white group-hover:scale-105 transition-all duration-300 flex-shrink-0">
               <FiHeadphones className="w-5 h-5" />
             </div>
-            <div className="relative z-10 text-left leading-tight -gap-3">
-              <p className="text-xs -mt-11 pt-14 text-gray-500 mb-1 font-medium group-hover:text-white/80 transition-colors duration-1000 ease-in-out">
+            <div className="relative z-10 text-left leading-tight">
+              <p className="text-xs text-gray-500 font-medium group-hover:text-white/80 transition-colors duration-1000 ease-in-out m-0" style={{ margin: 0 }}>
                 Looking for Support ?
               </p>
-              <p className="text-sm mb-3 text-[#DA2744] font-bold group-hover:text-white transition-colors duration-1000 ease-in-out">
+              <p className="text-sm text-[#DA2744] font-bold group-hover:text-white transition-colors duration-1000 ease-in-out m-0" style={{ margin: 0 }}>
                 Connect with Macnman
               </p>
             </div>
@@ -783,16 +783,6 @@ export default function ProductPage() {
       <div className="relative max-w-[854px] mx-auto w-full px-4 mb-8 mt-10">
         {/* Row for arrows and tab text vertically centered */}
         <div className="flex justify-between items-center max-w-[854px] mx-auto pb-4">
-          {/* Left Arrow Button */}
-          {/* <button
-            onClick={handlePrevTab}
-            type="button"
-            className="hover:opacity-80 transition flex-shrink-0 w-[30px] h-[30px] rounded-full bg-gray-200/80 flex items-center justify-center mr-2"
-            aria-label="Previous filter tab"
-          >
-            <FiChevronLeft className="w-[18px] h-[18px] text-white" />
-          </button> */}
-
           {/* Tabs row */}
           <div className="flex gap-[30px] items-center justify-center relative flex-1">
             {categories.map((cat) => {
@@ -828,43 +818,59 @@ export default function ProductPage() {
               );
             })}
           </div>
-
-          {/* Right Arrow Button */}
-          {/* <button
-            onClick={handleNextTab}
-            type="button"
-            className="hover:opacity-80 transition flex-shrink-0 w-[30px] h-[30px] rounded-full bg-gray-200/80 flex items-center justify-center ml-2"
-            aria-label="Next filter tab"
-          >
-            <FiChevronRight className="w-[18px] h-[18px] text-white" />
-          </button> */}
         </div>
-
-        {/* Bottom horizontal border line stacked exactly under active red line */}
-        {/* <div className="absolute bottom-[1px] left-[52px] right-[52px] h-[1px] bg-[#E3E3E3]" /> */}
       </div>
 
       {/* Technology sliding capsule filter */}
       {techOptions.length > 1 && (
-        <div className="flex flex-wrap justify-center gap-6 mb-10 px-4">
-          {techOptions.map((tech) => {
-            const isActive = activeTech === tech;
-            return (
-              <button
-                key={tech}
-                onClick={() => {
-                  setActiveTech(tech);
-                }}
-                type="button"
-                className={`px-5 py-1.5 rounded-full text-xs font-bold uppercase transition-colors ${isActive
-                    ? "bg-black text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+        <div className="relative max-w-4xl mx-auto px-4 mb-10">
+          <div
+            role="tablist"
+            aria-label="Filter products by technology"
+            className="relative flex items-center mx-auto p-[4px]"
+            style={{
+              width: "min(840px, 100%)",
+              height: "48px",
+              background: "#F9F9F9",
+              borderRadius: "50px",
+            }}
+          >
+            {/* White pill slider */}
+            <div
+              className={`absolute top-[4px] bottom-[4px] bg-[#1E1E1E] rounded-full ${
+                techTransitionEnabled ? "transition-all duration-[220ms] ease-[cubic-bezier(0.34,1.0,0.64,1)]" : ""
+              }`}
+              style={{
+                left: `${techSliderStyle.left}px`,
+                width: `${techSliderStyle.width}px`,
+                boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08)",
+              }}
+            />
+
+            {techOptions.map((tech, idx) => {
+              const isActive = activeTech === tech;
+              return (
+                <button
+                  ref={(el) => {
+                    techFilterRefs.current[idx] = el;
+                  }}
+                  key={tech}
+                  onClick={() => setActiveTech(tech)}
+                  role="tab"
+                  aria-selected={isActive}
+                  aria-controls="products-slider"
+                  type="button"
+                  className={`relative z-10 flex-1 h-full text-[14px] tracking-[-0.01em] transition-all duration-150 ${
+                    isActive
+                      ? "font-semibold text-[#FFFFFF]"
+                      : "font-medium text-[#86868B] hover:text-[#1D1D1F]"
                   }`}
-              >
-                {tech}
-              </button>
-            );
-          })}
+                >
+                  {tech}
+                </button>
+              );
+            })}
+          </div>
         </div>
       )}
 
@@ -938,15 +944,6 @@ export default function ProductPage() {
                     }}
                     aria-label={`Explore product ${p.name}`}
                   >
-                    {/* Tag Badge */}
-                    {/* {p.tags && p.tags.length > 0 && (
-                      <div className="absolute top-3 left-4 z-10">
-                        <span className="text-[8px] bg-[#DA2744] text-white font-bold tracking-wide px-2 py-0.5 rounded-full uppercase">
-                          {p.tags[0]}
-                        </span>
-                      </div>
-                    )} */}
-
                     {/* Product Image Container */}
                     <div
                       className="relative rounded-2xl p-2 flex items-center justify-center mb-2.5 mx-auto pointer-events-none"
